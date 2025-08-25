@@ -385,6 +385,14 @@ body {
     margin-bottom: 20px;
 }
 
+.ticket-main-event {
+    color: var(--primary-yellow);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
 .ticket-price {
     display: flex;
     align-items: baseline;
