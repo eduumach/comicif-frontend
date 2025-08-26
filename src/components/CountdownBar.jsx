@@ -11,10 +11,10 @@ const CountdownBar = () => {
 
   useEffect(() => {
     const updateCountdown = () => {
-      const eventDate = new Date('2025-12-04T10:00:00');
+      const eventDate = new Date('2025-10-25T08:00:00');
       const now = new Date();
       const diff = eventDate - now;
-
+      
       if (diff > 0) {
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
