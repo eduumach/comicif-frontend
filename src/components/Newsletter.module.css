@@ -1,0 +1,69 @@
+.newsletterSection {
+  padding: 100px 40px;
+  background: var(--primary-yellow);
+  color: var(--dark-bg);
+}
+
+.newsletterContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletterTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 56px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.newsletterInput {
+  flex: 1;
+  min-width: 300px;
+  padding: 18px 25px;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.newsletterButton {
+  padding: 18px 50px;
+  background: var(--dark-bg);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newsletterButton:hover {
+  background: #1A1A1A;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .newsletterTitle {
+    font-size: 40px;
+  }
+  
+  .newsletterForm {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newsletterInput {
+    min-width: 100%;
+  }
+}

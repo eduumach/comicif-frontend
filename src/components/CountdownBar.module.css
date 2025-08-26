@@ -1,0 +1,15 @@
+.countdownBar {
+  background: var(--primary-yellow);
+  color: var(--dark-bg);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.countdownBar span {
+  color: var(--primary-pink);
+  font-size: 32px;
+  margin: 0 5px;
+}

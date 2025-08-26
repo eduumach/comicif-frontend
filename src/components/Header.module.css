@@ -1,0 +1,105 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.logoText .comic {
+  color: var(--text-primary);
+}
+
+.logoText .if {
+  color: var(--primary-pink);
+}
+
+.logoText .year {
+  color: var(--primary-yellow);
+  font-size: 24px;
+}
+
+.navMenu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navMenu a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.navMenu a:hover {
+  color: var(--primary-pink);
+}
+
+.navMenu a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-pink);
+  transition: width 0.3s;
+}
+
+.navMenu a:hover::after {
+  width: 100%;
+}
+
+.ctaButton {
+  background: var(--primary-yellow);
+  color: var(--dark-bg);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.ctaButton:hover {
+  background: #FFC700;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .navMenu {
+    display: none;
+  }
+}
