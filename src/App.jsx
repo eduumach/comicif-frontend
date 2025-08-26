@@ -1,27 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import CountdownBar from './components/CountdownBar';
-import TicketsSection from './components/TicketsSection';
-import AttractionsSection from './components/AttractionsSection';
-import GallerySection from './components/GallerySection';
-import ProductsSection from './components/ProductsSection';
-import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import PhotoProcessorPage from './pages/PhotoProcessorPage';
 import './App.css';
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Hero />
-      <CountdownBar />
-      <TicketsSection />
-      <AttractionsSection />
-      <GallerySection />
-      <ProductsSection />
-      <Newsletter />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/super-heroi" element={<PhotoProcessorPage />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
